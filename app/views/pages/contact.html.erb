@@ -1,0 +1,11 @@
+<h1> Contacts </h1>
+<form action="/contact" method="get">
+  <input type="text" name="contact_name" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+<ul>
+ <% @contacts.each do |contact| %>
+  <li><%= contact %></li>
+ <% end %>
+</ul>
